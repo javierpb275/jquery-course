@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $("#test").click(() => {
-      alert("clicked");
-    });
+  $("#test").click(function () {
+    $(this).hide();
   });
+});
