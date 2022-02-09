@@ -13,6 +13,13 @@ $(document).ready(() => {
           fontSize: "30px",
         },
         3000
-      ).fadeOut();
+      )
+      .fadeOut(3000);
+
+    $("button").click(function () {
+      $(".content-box").stop(true, true);//makes the animation happen instantly
+      //stop(): stop animation running
+      //stop(true): stop all animations
+    });
   });
 });
