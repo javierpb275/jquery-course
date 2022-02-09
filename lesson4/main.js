@@ -1,5 +1,12 @@
 $(document).ready(() => {
   $("#menu-toggle").click(function () {
-    $("#side-nav").fadeToggle();
+    //slideUp and slideDown
+    $("#side-nav").slideToggle(1000);
+  });
+
+  $(".info-title").click(function () {
+    $(".info-content").slideToggle("slow", () => {
+      alert("hi there")
+    });
   });
 });
