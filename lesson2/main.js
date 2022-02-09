@@ -11,4 +11,17 @@ $(document).ready(() => {
   $("#p4").mouseout(function () {
     $(this).hide();
   });
+
+  let menuTrigger = true;
+  $(document).keypress((e) => {
+    if (e.which == 13) {
+      if (menuTrigger === false) {
+        $("nav").fadeIn(500);
+        menuTrigger = true;
+      } else if (menuTrigger === true) {
+        $("nav").fadeOut(500);
+        menuTrigger = false;
+      }
+    }
+  });
 });
