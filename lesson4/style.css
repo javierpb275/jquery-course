@@ -1,0 +1,16 @@
+nav {
+    display: none;
+}
+
+.info-box {
+    text-align: center;
+    margin: 200px 500px 200px 500px;
+}
+
+.info-title {
+    background-color: greenyellow;
+}
+
+.info-content {
+    background-color: aqua;
+}
