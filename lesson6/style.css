@@ -1,0 +1,8 @@
+.content-before {
+    background-color: aqua;
+}
+
+.content-after {
+    display: none;
+    opacity: 0;
+}
