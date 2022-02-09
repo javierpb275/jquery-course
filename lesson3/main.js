@@ -1,5 +1,7 @@
 $(document).ready(() => {
     $("#menu-toggle").click(function () {
-        $("#side-nav").show();
+        $("#side-nav").toggle(1000, () => {
+            alert("hi there")
+        });
     });
 });
